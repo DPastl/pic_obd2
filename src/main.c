@@ -189,8 +189,8 @@ void main(void) {
 
         WDTCONbits.SWDTEN = 1;
 
-        char byteline1[];
-        char byteline2[];
+        char byteline1[16];
+        char byteline2[16];
         char rx_buffer[8];
         __delay_ms(5);
         
@@ -457,8 +457,6 @@ void main(void) {
                 
                         __delay_ms(4000);
                         
-                        char byte_in = RCREG;
-                        char byte_in = RCREG;
                         char byte_in = RCREG;
                         
                         WDTCONbits.SWDTEN = 1;
